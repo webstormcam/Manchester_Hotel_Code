@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+@font-face{
+    font-family:"Seta Reta NF W01 Regular";
+    src:url("../fonts/ecf31029-b987-40fc-88a1-2d11f4c7a2f1.woff2") format("woff2"),url("Fonts/1496279/cb866d54-9c93-44de-8341-64627ad25e78.woff") format("woff");
+}
+
+
 body{
     display: grid;
     grid-template-columns: 1fr;
@@ -14,5 +20,20 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+
+#logo{
+    width: 80%;
+}
+
+header p{
+    color: #f9efe1;
+    font-family: "Seta Reta NF W01 Regular" ;
+}
+
 
