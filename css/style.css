@@ -7,6 +7,10 @@
     src:url("../fonts/ecf31029-b987-40fc-88a1-2d11f4c7a2f1.woff2") format("woff2"),url("Fonts/1496279/cb866d54-9c93-44de-8341-64627ad25e78.woff") format("woff");
 }
 
+:root{
+    --beige:#f9efe1
+}
+
 
 body{
     display: grid;
@@ -28,11 +32,12 @@ header{
 
 
 #logo{
-    width: 80%;
+ 
+    color: var(--beige);
+    
 }
 
 header p{
-    color: #f9efe1;
     font-family: "Seta Reta NF W01 Regular" ;
 }
 
