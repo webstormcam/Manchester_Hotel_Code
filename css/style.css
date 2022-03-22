@@ -8,14 +8,15 @@
 }
 
 :root{
-    --beige:#f9efe1
+    --beige:#f9efe1;
+    --lifeHouse:"Seta Reta NF W01 Regular"
 }
 
 
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: 400px;
    
 }
 
@@ -26,19 +27,71 @@ header{
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 100%;
+  
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 1rem;
+    align-self: flex-start;
+    font-family: var(--lifeHouse);
+    z-index: 500;
+    width: 100%;
+}
+
+nav p{
+    color: var(--beige);
+}
+
+.mobile-ham{
+    width: 1rem;
+    cursor: pointer;
 }
 
 
 #logo{
  
-    color: var(--beige);
+    
+    font-size: 2rem;
+    font-family: var(--lifeHouse);
+    text-align: center;
+    border-bottom: 1px solid var(--beige);
     
 }
 
-header p{
-    font-family: "Seta Reta NF W01 Regular" ;
+.open-words{
+    z-index: 500;
+    color: var(--beige);
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-self: center;
+   
+   
+   
 }
+
+.open-words p{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.layer{
+    background-color: hsla(283, 19%, 7%, 0.527);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
