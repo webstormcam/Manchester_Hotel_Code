@@ -4,12 +4,18 @@
 
 @font-face{
     font-family:"Seta Reta NF W01 Regular";
-    src:url("../fonts/ecf31029-b987-40fc-88a1-2d11f4c7a2f1.woff2") format("woff2"),url("Fonts/1496279/cb866d54-9c93-44de-8341-64627ad25e78.woff") format("woff");
+    src:url("../fonts/ecf31029-b987-40fc-88a1-2d11f4c7a2f1.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "SweetSansPro-Regular";
+    src: url('../fonts/SweetSansPro-Regular.woff');
 }
 
 :root{
     --beige:#f9efe1;
-    --lifeHouse:"Seta Reta NF W01 Regular"
+    --lifeHouse:"Seta Reta NF W01 Regular";
+    --navFont:"SweetSansPro-Regular";
 }
 
 
@@ -38,7 +44,7 @@ nav{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1.5rem;
     align-self: flex-start;
     font-family: var(--lifeHouse);
     z-index: 500;
@@ -72,11 +78,7 @@ nav p{
     flex-direction: column;
   align-items: center;
   position: relative;
-  top: 30%;
-
-   
-   
-   
+  top: 30%; 
 }
 
 .open-words p{
@@ -98,6 +100,8 @@ nav p{
     display: none;
 }
 
+
+
 @media screen and (min-width:768px){
     .mobile-ham{
        display: none;
@@ -106,9 +110,40 @@ nav p{
     .bigNav-details{
         display: flex;
         flex-direction: row;
-        width: 300px;
+        width: 400px;
         justify-content: space-around;
+        font-family: var(--navFont) ;
     }
+
+
+    #logo{
+        font-size: 3rem;
+    }
+
+    .open-words p{
+       font-size: 1.2rem;
+    }
+
+    .life-house{
+        font-size: 1.5rem ;
+    }
+
+
+    .selection-items:hover{
+border-bottom: 1px solid var(--beige);
+cursor: pointer;
+    }
+}
+
+@media screen and (min-width:1440px){
+    #logo{
+ 
+    font-size: 4rem;
+     }
+
+    .open-words p{
+        font-size: 1.5rem;
+     }
 }
 
 
