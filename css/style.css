@@ -56,7 +56,7 @@ nav p{
 }
 
 .mobile-ham{
-    width: 1rem;
+    width: 1.5rem;
     cursor: pointer;
 }
 
@@ -64,7 +64,7 @@ nav p{
 #logo{
  
     
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-family: var(--lifeHouse);
     text-align: center;
     border-bottom: 1px solid var(--beige);
@@ -100,6 +100,10 @@ nav p{
     display: none;
 }
 
+.life-house{
+    font-size: 1.5rem ;
+}
+
 
 
 @media screen and (min-width:768px){
@@ -124,9 +128,7 @@ nav p{
        font-size: 1.2rem;
     }
 
-    .life-house{
-        font-size: 1.5rem ;
-    }
+   
 
 
     .selection-items:hover{
