@@ -3,16 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="//db.onlinewebfonts.com/c/8045547c359909e8c51b082871dd8959?family=SetaRetaNFW01-Regular" rel="stylesheet" type="text/css"/>
+
     <title>Manchester Hotel</title>
 </head>
 <body>
+    <div id="Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+    </div>
     <header>
         <div class="layer"></div>
-        <nav><p class="life-house">LIFE HOUSE</p> <img class="mobile-ham" src="./imgs/icon-hamburger.svg" alt="mobile-hamburger">
+        <nav><p class="life-house">LIFE HOUSE</p> <img onclick="openNav()" class="mobile-ham" src="./imgs/icon-hamburger.svg" alt="mobile-hamburger">
         <div class="bigNav-details">
 <p class="selection-items">GUEST ROOMS</p>
 <p class="selection-items">AMENITES</p>
@@ -24,5 +32,6 @@
             </div>
      
     </header>
+    <script src="./js/script.js"></script>
 </body>
 </html>
