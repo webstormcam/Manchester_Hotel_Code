@@ -15,6 +15,7 @@
 :root{
     --beige:#f9efe1;
     --lifeHouse:"Seta Reta NF W01 Regular";
+    --green: #263d2f;
     --navFont:"SweetSansPro-Regular";
 }
 
@@ -22,7 +23,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: 100vh 500px ;
    
 }
 
@@ -144,6 +145,38 @@ nav p{
   .coming-soon{
       font-family: var(--lifeHouse);
       font-size: 1.2rem;
+  }
+
+  main{
+      background-color: var(--green);
+      padding: 1.5rem;
+      display: grid;
+      grid-template-rows: 450px;
+  }
+
+  .secondary-headings{
+      font-family: var(--lifeHouse);
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #000;
+  }
+
+  #main-items{
+      background-color: var(--beige);
+      padding: 1rem;
+      
+  }
+
+  .main-wording{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 0.8rem;
+  }
+
+  .main-photos{
+      width: 80%;
   }
   
 
