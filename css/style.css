@@ -43,7 +43,7 @@ header{
 nav{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 1.5rem;
     align-self: flex-start;
     font-family: var(--lifeHouse);
@@ -105,25 +105,28 @@ nav p{
 }
 
 .sidenav {
-    height: 100%;
+    height: 300px;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    z-index: 600;
+    border-bottom-left-radius: 1rem;
   }
   
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    font-family: var(--navFont);
   }
   
   .sidenav a:hover {
@@ -137,6 +140,11 @@ nav p{
     font-size: 36px;
     margin-left: 50px;
   }
+
+  .coming-soon{
+      font-family: var(--lifeHouse);
+      font-size: 1.2rem;
+  }
   
 
 
@@ -148,12 +156,21 @@ nav p{
        display: none;
     }
 
+    #Sidenav{
+        display: none !important;
+    }
+
     .bigNav-details{
         display: flex;
         flex-direction: row;
         width: 400px;
         justify-content: space-around;
         font-family: var(--navFont) ;
+    }
+
+    .coming-soon{
+        
+        font-size: 1.4rem;
     }
 
 
@@ -183,6 +200,8 @@ cursor: pointer;
     .open-words p{
         font-size: 1.5rem;
      }
+
+   
 }
 
 
