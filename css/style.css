@@ -24,6 +24,7 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 100vh 500px ;
+    grid-template-rows: 100vh 700px ;
    
 }
 
@@ -163,10 +164,17 @@ nav p{
 
   #main-items{
       background-color: var(--beige);
-      padding: 1rem;
+      /* padding: 1rem; */
       
   }
 
+  
+  .main-wording-section{
+      padding: 1rem;
+  }
+  
+  
+  
   .main-wording{
     font-size: 16px;
     font-style: normal;
@@ -175,8 +183,9 @@ nav p{
     margin-top: 0.8rem;
   }
 
+
   .main-photos{
-      width: 80%;
+      width: 100%;
   }
   
 
@@ -224,6 +233,18 @@ cursor: pointer;
     }
 }
 
+
+
+
+
+@media screen and (min-width:1024px){
+    #main-items{
+       display: flex;
+        
+    }
+}
+
+
 @media screen and (min-width:1440px){
     #logo{
  
@@ -236,6 +257,10 @@ cursor: pointer;
 
    
 }
+
+
+
+
 
 
 
