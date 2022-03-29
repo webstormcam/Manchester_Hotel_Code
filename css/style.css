@@ -23,7 +23,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100vh 700px ;
+    grid-template-rows: 100vh auto ;
    
 }
 
@@ -170,7 +170,7 @@ nav p{
       background-color: var(--green);
       padding: 1.5rem;
       display: grid;
-      grid-template-rows: 450px;
+      grid-template-rows: auto;
   }
 
   .secondary-headings{
@@ -183,13 +183,17 @@ nav p{
   #main-items{
       background-color: var(--beige);
       /* padding: 1rem; */
+      display: flex;
+      flex-direction: column;
      
       
   }
 
   
   .main-wording-section{
-      padding: 1rem;
+      padding: 2rem;
+      width: 95%;
+      align-self: center;
   }
   
   
@@ -207,6 +211,29 @@ nav p{
       width: 100%;
       position: relative;
       bottom: 0;
+  }
+
+  .gallery{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--green);
+      padding: 2rem;
+      
+  }
+
+  .gallery p{
+      text-align: center;
+      color: var(--beige);
+      
+  }
+
+  .gallery-icon{
+      width: 2rem;
+      position: relative;
+      left: 1rem;
+      fill: white;
   }
   
 
@@ -244,6 +271,14 @@ nav p{
     .open-words p{
        font-size: 1.2rem;
     }
+
+
+    .secondary-headings{
+        font-size: 1.9rem;
+        
+    }
+
+    
 
    
 
