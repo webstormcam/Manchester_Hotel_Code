@@ -17,7 +17,7 @@ var modalImg = document.getElementById("gallery-photo");
 var captionText = document.getElementById("caption");
 gall.onclick = function(){
   modal.style.display = "block";
-  modalImg.src = this.src;
+  modalImg.src = "imgs/The_Manchester_Hotel_Photo.png";
   captionText.innerHTML = this.alt;
 }
 

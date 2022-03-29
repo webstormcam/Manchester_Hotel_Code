@@ -280,6 +280,17 @@ font-size: 0.8rem;
       flex-direction: column;
   }
 
+  .dots{
+      position: absolute;
+      bottom: 0rem;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      
+      
+  }
+
   
 
   
