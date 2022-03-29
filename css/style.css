@@ -180,7 +180,7 @@ nav p{
       border-bottom: 1px solid #000;
   }
 
-  #main-items{
+.section{
       background-color: var(--beige);
       /* padding: 1rem; */
       display: flex;
@@ -236,6 +236,22 @@ nav p{
       left: 1rem;
       fill: white;
   }
+
+  #room_features{
+    
+  }
+
+
+  #room_features li{
+border-top: 1px solid grey;
+margin: 1rem 0rem; 
+padding: 1rem 0rem;
+letter-spacing: 0.2rem ;
+font-size: 0.8rem;
+
+  }
+
+  
 
   
   
@@ -297,7 +313,7 @@ cursor: pointer;
 
 
 @media screen and (min-width:1024px){
-    #main-items{
+    .section{
        flex-direction: row;
         
     }
