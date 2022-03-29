@@ -238,17 +238,28 @@ nav p{
   }
 
   #room_features{
-    
+    border-bottom: 1px solid black;
+    margin-top: 1.2rem;
   }
 
 
   #room_features li{
 border-top: 1px solid grey;
-margin: 1rem 0rem; 
-padding: 1rem 0rem;
+/* margin: 1rem 0rem;  */
+padding: 1.4rem 0rem;
 letter-spacing: 0.2rem ;
 font-size: 0.8rem;
 
+  }
+
+  .room_feature{
+      display: flex;
+      align-items: center;
+  }
+
+  .room-icon{
+      width: 1.9rem;
+      margin-right: 0.5rem;
   }
 
   
